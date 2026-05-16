@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #f1f5f9;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #111827
+    );
+
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+
+    color: #38bdf8;
+}
+
+.hero p {
+    font-size: 1.4rem;
+    color: #cbd5e1;
+    margin-bottom: 25px;
+}
+
+.download-btn {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 10px;
+
+    background: #38bdf8;
+    color: #0f172a;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.download-btn:hover {
+    transform: translateY(-3px);
+    background: #7dd3fc;
+}
+
+/* SECTION STYLING */
+
+section {
+    padding: 70px 10%;
+}
+
+section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+
+    color: #38bdf8;
+
+    border-left: 5px solid #38bdf8;
+    padding-left: 15px;
+}
+
+/* CARD DESIGN */
+
+.card {
+    background: #1e293b;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #f8fafc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+}
+
+/* LISTS */
+
+ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+    color: #cbd5e1;
+}
+
+/* LINKS */
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #7dd3fc;
+}
+
+/* SKILLS SECTION */
+
+.Technical {
+    display: grid;
+}
+
+/* SCROLL ANIMATION */
+
+.hidden {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* NAVBAR */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+
+    padding: 15px;
+
+    background: rgba(15, 23, 42, 0.9);
+
+    backdrop-filter: blur(10px);
+
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    font-weight: 500;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 50px 7%;
+    }
+
+    section h2 {
+        font-size: 1.7rem;
+    }
+
+    .card {
+        padding: 20px;
+    }
+}
